@@ -1,0 +1,13 @@
+[user]
+  email = cheecheeo@gmail.com
+  name = John Chee
+[color]
+  ui = true
+[alias]
+  b = branch -avv
+  lp = log -p
+  cb = checkout -b
+  co = checkout
+  d = diff
+  ds = diff --stat
+  lpp = log --graph --abbrev-commit --pretty=oneline --decorate --branches
