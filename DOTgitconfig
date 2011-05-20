@@ -11,3 +11,5 @@
   d = diff
   ds = diff --stat
   lpp = log --graph --abbrev-commit --pretty=oneline --decorate --branches
+[branch]
+  autosetuprebase = always
