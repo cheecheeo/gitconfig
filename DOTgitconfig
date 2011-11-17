@@ -12,5 +12,7 @@
   ds = diff --stat
   lpp = log --graph --abbrev-commit --pretty=oneline --decorate --branches
   r = remote -v
+  rem = rebase master
+  cm = checkout master
 [branch]
   autosetuprebase = always
