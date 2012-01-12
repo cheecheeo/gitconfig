@@ -10,7 +10,7 @@
   co = checkout
   d = diff
   ds = diff --stat
-  lpp = log --graph --abbrev-commit --pretty=oneline --decorate --branches
+  lpp = log --graph --pretty=format:'%C(yellow)%h%Creset %Cgreen%cr%Creset %C(blue)%an%Creset%C(red)%d%Creset %s' --branches
   r = remote -v
   rem = rebase master
   cm = checkout master
