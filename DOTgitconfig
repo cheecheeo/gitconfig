@@ -4,8 +4,8 @@
 [color]
   ui = true
 [alias]
-  b = branch -avv
-  lp = log -p
+  b = branch -vv
+  lp = log -p --stat
   cb = checkout -b
   co = checkout
   d = diff
@@ -14,5 +14,14 @@
   r = remote -v
   rem = rebase master
   cm = checkout master
+  db = diff $(git merge-base HEAD master)
 [branch]
   autosetuprebase = always
+[push]
+  default = simple
+[diff]
+  algorithm = patience
+[core]
+  pager = less -F -X
+[http]
+  postBuffer = 10485760
