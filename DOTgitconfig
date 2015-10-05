@@ -18,7 +18,7 @@
 [branch]
   autosetuprebase = always
 [push]
-  default = simple
+	default = upstream
 [diff]
 	algorithm = patience
 	renames = true
