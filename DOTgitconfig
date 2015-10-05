@@ -5,12 +5,12 @@
   ui = true
 [alias]
   b = branch -vv
-  lp = log -p --stat
+  lp = log -p --stat --date=local
   cb = checkout -b
   co = checkout
   d = diff
   ds = diff --stat
-  lpp = log --graph --pretty=format:'%C(yellow)%h%Creset %Cgreen%cr%Creset %C(blue)%an%Creset%C(red)%d%Creset %s' --branches
+  lpp = log --graph --pretty=format:'%C(yellow)%h%Creset %Cgreen%cr%Creset %C(blue)%an%Creset%C(red)%d%Creset %s' --branches --date=local
   r = remote -v
   rem = rebase master
   cm = checkout master
@@ -20,8 +20,9 @@
 [push]
   default = simple
 [diff]
-  algorithm = patience
+	algorithm = patience
+	renames = true
 [core]
-  pager = less -F -X
+	pager = less -F -X
 [http]
-  postBuffer = 10485760
+	postBuffer = 512000000
